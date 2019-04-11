@@ -4,20 +4,19 @@ import java.applet.AudioClip;
 
 import javax.swing.JApplet;
 
-public class Cow extends Animal{
+public class Chicken extends Animal {
 
 	@Override
 	void makeNoise() {
 		// TODO Auto-generated method stub
-		AudioClip c = JApplet.newAudioClip(getClass().getResource("cow.wav"));
-		c.play();
-		
+		AudioClip ch = JApplet.newAudioClip(getClass().getResource("chicken.wav"));
+		ch.play();
 	}
 
 	@Override
 	void diet() {
 		// TODO Auto-generated method stub
-		System.out.println("Cow: grass, grains, stems and other plant materials");
+		System.out.println("Chicken: Grains, fruits, seeds");
 	}
 
 }
